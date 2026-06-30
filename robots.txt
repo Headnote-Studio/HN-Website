@@ -1,0 +1,27 @@
+# Explicitly allow major AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# General allowance for all other bots
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://headnotestudio.com/sitemap.xml
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/

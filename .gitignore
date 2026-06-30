@@ -1,0 +1,46 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+
+# Environment and Secrets — never commit these
+.env
+.env.local
+.env.*.local
+config.local.js
+*.key
+*.pem
+
+# Dependencies (none expected — static site)
+node_modules/
+
+# Build and Cache (not used — no build step)
+dist/
+build/
+.cache/
+
+# Backup Files
+*.bak
+*.backup
+
+# Claude Code / agent working files
+.claude/
