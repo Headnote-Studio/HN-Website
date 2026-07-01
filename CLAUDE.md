@@ -90,6 +90,17 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 - `privacy.html` and `terms.html` are placeholders — replace with real legal copy, then add them to `sitemap.xml` and remove their `noindex`.
 - No analytics installed. Add a GA4 snippet to every page if/when a Measurement ID is available.
 
+## Deployment Method (Hostinger Git)
+
+The site is deployed via Hostinger's **classic Git tool** (hPanel → headnotestudio.com → Dashboard → Advanced → GIT), pulling from GitHub into `public_html`, with **auto-deployment** enabled (every push to `main` redeploys).
+
+**Repo is currently PUBLIC**, so Hostinger clones it over the HTTPS URL (`https://github.com/Headnote-Studio/HN-Website.git`) with no key. This was chosen because Hostinger issues **one SSH key per hosting account**, and that key is already used as the deploy key for the SelectionWise repo — GitHub won't reuse the same key as a deploy key on a second private repo.
+
+### To switch this repo to PRIVATE later
+Use one of:
+1. **Account-level SSH key:** remove Hostinger's key from the SelectionWise repo's Deploy keys, then add the same public key under the GitHub *user account* (Settings → SSH and GPG keys). Account keys grant access to all the user's repos, covering both sites. Then set the Hostinger GIT repository field to the SSH URL `git@github.com:Headnote-Studio/HN-Website.git`.
+2. **GitHub Actions → FTP/SFTP:** a workflow uploads files to Hostinger on push (repo stays private; adds a CI step).
+
 ## This Is NOT the App
 
 This repo is the marketing site only. It is unrelated to any separate application codebase.
