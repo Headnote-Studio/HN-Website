@@ -8,7 +8,7 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 
 ## Repository
 
-- **GitHub:** `HeadnoteStudio/HN-Website`
+- **GitHub:** `Headnote-Studio/HN-Website` (https://github.com/Headnote-Studio/HN-Website)
 - **Branch:** `main` (only branch)
 - **Local path:** `C:\Headnote\HN-Website`
 
