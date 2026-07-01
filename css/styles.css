@@ -130,49 +130,29 @@ p { line-height: 1.7; }
 .nav-cta { margin-left: 6px; padding: 11px 20px; }
 .mobile-menu-toggle { display: none; background: none; border: none; color: var(--parchment); cursor: pointer; padding: 8px; }
 
-/* ── HERO (two-column, dark, layered) ── */
-.hero {
-  position: relative; overflow: hidden; color: var(--parchment);
+/* ── HERO (full-bleed image backdrop) ── */
+.hero { position: relative; overflow: hidden; color: var(--parchment);
+  background: var(--deep-ink-2); min-height: 660px; display: flex; align-items: center; }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 78% center; z-index: 0; }
+.hero-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background:
-    radial-gradient(1100px 620px at 82% -12%, rgba(31,92,74,0.55), transparent 60%),
-    radial-gradient(820px 520px at -5% 108%, rgba(184,155,94,0.12), transparent 55%),
-    linear-gradient(158deg, var(--deep-ink) 0%, var(--deep-ink-2) 100%);
-}
-.hero::before { /* subtle dot mesh */
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  background-image: radial-gradient(rgba(246,241,232,0.05) 1px, transparent 1px);
-  background-size: 26px 26px; opacity: 0.5;
-}
-.hero-grid {
-  position: relative; z-index: 2;
-  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;
-  padding: 104px 0 108px;
-}
-.hero-text h1 { color: var(--parchment); font-size: 40px; line-height: 1.08; margin-bottom: 8px; }
-@media (min-width: 768px) { .hero-text h1 { font-size: 56px; } }
-.hero-text h1 .accent { color: var(--muted-brass); }
-.hero-text .subtitle { font-size: 18px; color: rgba(221,232,225,0.85); line-height: 1.7; max-width: 520px; margin: 22px 0 32px; }
+    linear-gradient(90deg, rgba(13,26,22,0.96) 0%, rgba(13,26,22,0.84) 30%, rgba(13,26,22,0.46) 56%, rgba(13,26,22,0.10) 100%),
+    linear-gradient(0deg, rgba(13,26,22,0.5), transparent 42%); }
+.hero > .container { position: relative; z-index: 2; width: 100%; }
+.hero-content { max-width: 560px; padding: 104px 0; }
+.hero-content h1 { color: var(--parchment); font-size: 40px; line-height: 1.06; margin-bottom: 8px; }
+@media (min-width: 768px) { .hero-content h1 { font-size: 56px; } }
+.hero-content h1 .accent { color: var(--muted-brass); }
+.hero-content .subtitle { font-size: 18px; color: rgba(238,242,239,0.9); line-height: 1.7; max-width: 500px; margin: 22px 0 32px; }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-tagline { margin-top: 30px; font-family: 'Fraunces', serif; font-style: italic; font-size: 16px; color: rgba(221,232,225,0.6); }
+.hero-tagline { margin-top: 30px; font-family: 'Fraunces', serif; font-style: italic; font-size: 16px; color: rgba(221,232,225,0.62); }
 
-/* Hero visual (network + mark) */
-.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; min-height: 340px; }
-.hero-visual .visual-card {
-  position: relative; width: 100%; aspect-ratio: 4/3; border-radius: var(--radius-lg);
-  background: linear-gradient(150deg, rgba(31,92,74,0.30), rgba(16,32,28,0.15));
-  border: 1px solid rgba(246,241,232,0.12); overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-.hero-visual .visual-card img { width: 100%; height: 100%; object-fit: cover; }
-.hero-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero-visual .visual-mark { position: absolute; width: 34%; height: auto; left: 50%; top: 50%; transform: translate(-50%,-50%); opacity: 0.95; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.35)); }
-
-@media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; padding: 72px 0 76px; text-align: center; }
-  .hero-text .subtitle { margin-left: auto; margin-right: auto; }
-  .hero-ctas { justify-content: center; }
-  .hero-visual { order: -1; min-height: 240px; }
-  .hero-visual .visual-card { max-width: 420px; margin: 0 auto; }
+@media (max-width: 860px) {
+  .hero { min-height: 0; }
+  .hero-bg { object-position: 26% center; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(13,26,22,0.82) 0%, rgba(13,26,22,0.88) 100%); }
+  .hero-content { padding: 80px 0; max-width: 100%; }
+  .hero-content .subtitle { max-width: 100%; }
 }
 
 /* ── Interior page header ── */
