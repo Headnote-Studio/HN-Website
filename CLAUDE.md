@@ -35,20 +35,20 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 ├── services.html       ← Services (four pillars)
 ├── about.html          ← About
 ├── contact.html        ← Contact (details only — no form)
-├── privacy.html        ← Privacy Policy (PLACEHOLDER — needs real copy)
-├── terms.html          ← Terms of Service (PLACEHOLDER — needs real copy)
+├── privacy.html        ← Privacy Policy
+├── terms.html          ← Terms of Service
 ├── 404.html            ← Custom error page
 ├── .htaccess           ← Apache config (HTTPS, redirects, security headers, caching, hotlink protection)
 ├── robots.txt          ← Crawler rules (AI bots explicitly allowed)
 ├── sitemap.xml         ← Sitemap for search engines
-├── favicon.png
+├── icon.png            ← Favicon (Headnote app-icon mark)
 ├── css/
 │   └── styles.css      ← Single shared stylesheet (brand system)
 ├── js/
 │   └── main.js         ← Mobile menu toggle + dynamic copyright year
 └── images/
-    ├── logo.png        ← Brand logo
-    └── home-team.jpg   ← Homepage value-proposition photo
+    ├── logo-mark.png       ← Brand mark (light, transparent — for dark nav/footer)
+    └── home-team-photo.jpg ← Homepage value-proposition photo (optimised JPG)
 ```
 
 ## Key Technical Details
@@ -87,8 +87,8 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 
 ## Outstanding
 
-- `privacy.html` and `terms.html` are placeholders — replace with real legal copy, then add them to `sitemap.xml` and remove their `noindex`.
 - No analytics installed. Add a GA4 snippet to every page if/when a Measurement ID is available.
+- `privacy.html` / `terms.html` contain standard boilerplate suitable for an information-only site. Have a solicitor review before relying on them, and update if the business starts collecting data (forms, analytics, accounts).
 
 ## Deployment Method (Hostinger Git)
 

@@ -29,7 +29,18 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- privacy.html and terms.html are intentionally excluded: they are set to noindex
-       until final legal copy is added. -->
+  <url>
+    <loc>https://headnotestudio.com/privacy.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://headnotestudio.com/terms.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
 </urlset>
