@@ -4,7 +4,7 @@
 
 The public marketing website for **Headnote Studio** (https://headnotestudio.com), an AI-augmented digital marketing agency for small UK legal firms.
 
-This is a **static HTML/CSS/JS site** with no build step, no framework, and no server-side code. Files are served as-is. It was migrated from a Hostinger Horizons (React/Vite) export and hand-authored as clean static HTML, mirroring the conventions of the sister site selectionwise.com.
+This is a **static HTML/CSS/JS site** with no build step, no framework, and no server-side code. Files are served as-is. It is hand-authored as clean static HTML, mirroring the conventions of the sister site selectionwise.com.
 
 ## Repository
 
@@ -32,9 +32,10 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 ```
 /                       ← Web root (everything here is public)
 ├── index.html          ← Homepage
-├── services.html       ← Services (four pillars)
-├── about.html          ← About
-├── contact.html        ← Contact (details only — no form)
+├── services.html       ← Services (four pillars + "How to begin" ladder)
+├── method.html         ← Our method (evidence tagging, one honest number, fee guarantees)
+├── about.html          ← About (+ "What we will never do" promises)
+├── contact.html        ← Contact (details + #snapshot section — mailto, no form)
 ├── privacy.html        ← Privacy Policy
 ├── terms.html          ← Terms of Service
 ├── 404.html            ← Custom error page
@@ -72,6 +73,13 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 | Sage Mist     | `#DDE8E1` |
 | Charcoal      | `#202421` |
 | Blue-Grey     | `#7896A3` |
+
+## Content Conventions (keep consistent)
+
+- **Four-pillar order:** wherever the pillars appear (home "Four pillars, one service" cards, the Services page blocks, and prose mentions), the order is **Visibility → Content → Monitoring → Referrer network** — Visibility first, Referrer network last. Move each pillar's icon, heading and text together as a block.
+- **Referrer network framing:** lead with the local *network of influence* — the professional introducers who refer (accountants, mortgage brokers, estate agents, financial advisers) **and** the community voices, groups and channels where ideal clients pay attention — not just "finding referrers". No paid-"influencer" promises.
+- **Footer tagline** ("The first note your next client sees.") is set in **Muted Brass** (`--muted-brass`, `#B89B5E`).
+- **Compliance guardrails (apply to all copy):** no prices anywhere on the site; guarantee language only ever refers to **refunds of our own fee** (never rankings or outcomes); the client's nominated partner keeps written sign-off; AI is used in production but people review before publication (keep the footer disclosure line intact). UK English throughout. No new colours/fonts beyond the brand palette.
 
 ## Safety Rules for Updates
 
