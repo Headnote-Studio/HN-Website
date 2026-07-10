@@ -3,20 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found — Headnote Studio</title>
-<meta name="description" content="The page you're looking for doesn't exist. Return to Headnote Studio.">
-<meta name="robots" content="noindex, follow">
+<title>Page not found - Headnote Studio</title>
 
-<meta property="og:title" content="Page Not Found — Headnote Studio">
-<meta property="og:description" content="The page you're looking for doesn't exist. Return to Headnote Studio.">
+<meta name="description" content="The page you're looking for doesn't exist or has moved.">
+<meta name="author" content="Headnote Studio">
+<meta name="language" content="en-GB">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://headnotestudio.com/404.html">
+
+<meta property="og:title" content="Page not found - Headnote Studio">
+<meta property="og:description" content="The page you're looking for doesn't exist or has moved.">
+<meta property="og:url" content="https://headnotestudio.com/404.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://headnotestudio.com/images/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Page Not Found — Headnote Studio">
-<meta name="twitter:description" content="The page you're looking for doesn't exist. Return to Headnote Studio.">
+<meta name="twitter:title" content="Page not found - Headnote Studio">
+<meta name="twitter:description" content="The page you're looking for doesn't exist or has moved.">
 <meta name="twitter:image" content="https://headnotestudio.com/images/og-card.png">
 
 <link rel="icon" type="image/png" href="/icon.png">
@@ -25,11 +31,43 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=14">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css?v=15">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://headnotestudio.com/#organization",
+      "name": "Headnote Studio",
+      "description": "Headnote Studio is a marketing studio for small and mid-size UK law firms, based in Solihull. It measures how law firms appear across ChatGPT, Google's AI (AI Overviews and AI Mode) and Google's local results, and runs the visibility, review and content work needed to appear more often - measured monthly as one honest number.",
+      "url": "https://headnotestudio.com/",
+      "logo": "https://headnotestudio.com/icon.png",
+      "image": "https://headnotestudio.com/images/og-card.png",
+      "email": "info@headnotestudio.com",
+      "telephone": "+44-7350-130001",
+      "founder": { "@type": "Person", "name": "James Hatton" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Solihull", "addressCountry": "GB" },
+      "areaServed": "GB",
+      "knowsAbout": ["AI search visibility for law firms", "Generative engine optimisation", "Local SEO for solicitors", "Google Business Profile management", "Online reviews for law firms", "Legal sector content marketing", "Professional referrer networks"],
+      "parentOrganization": { "@type": "Organization", "name": "SelectionWise Ltd" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://headnotestudio.com/#website",
+      "url": "https://headnotestudio.com/",
+      "name": "Headnote Studio",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://headnotestudio.com/#organization" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-
 <header class="site-header">
   <div class="container">
     <nav class="nav">
@@ -44,24 +82,22 @@
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="method.html">Our method</a>
+        <a href="insights.html">Insights</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html#snapshot" class="btn btn-primary nav-cta">Free snapshot</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="bg-parchment">
+  <section class="error-page">
     <div class="container">
-      <div class="error-page">
-        <div class="code">404</div>
-        <h1>Page not found</h1>
-        <p>Sorry, the page you're looking for doesn't exist. It may have been moved, deleted, or the address may be incorrect.</p>
-        <a href="index.html" class="btn btn-primary btn-lg">Go to homepage
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
+      <p class="code">404</p>
+      <h1 class="display-md">Page not <span class="accent-i">found.</span></h1>
+      <p>The page you're looking for doesn't exist or has moved. Perhaps it was never one of the answers.</p>
+      <a href="index.html" class="btn btn-primary btn-lg">Back to the homepage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
     </div>
   </section>
 </main>
@@ -74,18 +110,21 @@
           <img src="images/headnote-symbol-light.svg" alt="Headnote Studio">
           <span><span class="logo-word">Headnote</span><span class="logo-sub">Studio</span></span>
         </div>
-        <p class="footer-about">AI-augmented digital marketing for small UK legal firms.</p>
+        <p class="footer-about">Headnote Studio is a marketing studio for small and mid-size UK law firms - getting firms found, chosen and trusted in the era of AI search.</p>
         <p class="footer-disclaimer">AI is used in our production process; all content is reviewed by people before publication.</p>
       </div>
       <div class="footer-contact">
         <span class="footer-col-label">Contact</span>
-        <a href="mailto:info@headnotestudio.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>info@headnotestudio.com</a>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Solihull, United Kingdom</span>
+        <a href="mailto:info@headnotestudio.com">info@headnotestudio.com</a>
+        <a href="tel:+447350130001">07350 130001</a>
+        <span>Solihull, United Kingdom</span>
       </div>
       <div class="footer-col">
         <span class="footer-col-label">Quick links</span>
         <a href="services.html">Services</a>
         <a href="method.html">Our method</a>
+        <a href="insights.html">Insights</a>
+        <a href="playbook.html">The AI answer playbook</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -99,6 +138,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=1"></script>
+<script src="js/main.js?v=15"></script>
 </body>
 </html>

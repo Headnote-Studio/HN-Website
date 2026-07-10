@@ -3,18 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Headnote Studio</title>
+<title>About - Headnote Studio | A marketing studio built for UK law firms</title>
 
-<meta name="description" content="Headnote Studio is an AI-augmented digital marketing agency built specifically for small and mid-size legal firms.">
-<meta name="keywords" content="about Headnote Studio, legal marketing agency, law firm marketing, AI-augmented marketing">
+<meta name="description" content="Headnote Studio is a marketing studio working exclusively with small and mid-size UK law firms. AI does the production work; experienced people do the judgement. Based in Solihull, founded by James Hatton.">
 <meta name="author" content="Headnote Studio">
 <meta name="language" content="en-GB">
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://headnotestudio.com/about.html">
 
-<meta property="og:title" content="About — Headnote Studio">
-<meta property="og:description" content="An AI-augmented digital marketing agency built specifically for small and mid-size legal firms.">
+<meta property="og:title" content="About - Headnote Studio | A marketing studio built for UK law firms">
+<meta property="og:description" content="Headnote Studio is a marketing studio working exclusively with small and mid-size UK law firms. AI does the production work; experienced people do the judgement. Based in Solihull, founded by James Hatton.">
 <meta property="og:url" content="https://headnotestudio.com/about.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://headnotestudio.com/images/og-card.png">
@@ -22,8 +21,8 @@
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About — Headnote Studio">
-<meta name="twitter:description" content="An AI-augmented digital marketing agency built specifically for legal firms.">
+<meta name="twitter:title" content="About - Headnote Studio | A marketing studio built for UK law firms">
+<meta name="twitter:description" content="Headnote Studio is a marketing studio working exclusively with small and mid-size UK law firms. AI does the production work; experienced people do the judgement. Based in Solihull, founded by James Hatton.">
 <meta name="twitter:image" content="https://headnotestudio.com/images/og-card.png">
 
 <link rel="icon" type="image/png" href="/icon.png">
@@ -32,22 +31,53 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css?v=14">
+<link rel="stylesheet" href="css/styles.css?v=15">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "About Headnote Studio",
-  "url": "https://headnotestudio.com/about.html",
-  "about": { "@type": "Organization", "name": "Headnote Studio", "url": "https://headnotestudio.com" }
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://headnotestudio.com/#organization",
+      "name": "Headnote Studio",
+      "description": "Headnote Studio is a marketing studio for small and mid-size UK law firms, based in Solihull. It measures how law firms appear across ChatGPT, Google's AI (AI Overviews and AI Mode) and Google's local results, and runs the visibility, review and content work needed to appear more often - measured monthly as one honest number.",
+      "url": "https://headnotestudio.com/",
+      "logo": "https://headnotestudio.com/icon.png",
+      "image": "https://headnotestudio.com/images/og-card.png",
+      "email": "info@headnotestudio.com",
+      "telephone": "+44-7350-130001",
+      "founder": { "@type": "Person", "name": "James Hatton" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Solihull", "addressCountry": "GB" },
+      "areaServed": "GB",
+      "knowsAbout": ["AI search visibility for law firms", "Generative engine optimisation", "Local SEO for solicitors", "Google Business Profile management", "Online reviews for law firms", "Legal sector content marketing", "Professional referrer networks"],
+      "parentOrganization": { "@type": "Organization", "name": "SelectionWise Ltd" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://headnotestudio.com/#website",
+      "url": "https://headnotestudio.com/",
+      "name": "Headnote Studio",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://headnotestudio.com/#organization" }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://headnotestudio.com/about.html#webpage",
+      "url": "https://headnotestudio.com/about.html",
+      "name": "About - Headnote Studio",
+      "description": "Headnote Studio is a marketing studio working exclusively with small and mid-size UK law firms. AI does the production work; experienced people do the judgement. Based in Solihull, founded by James Hatton.",
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "https://headnotestudio.com/#website" },
+      "about": { "@id": "https://headnotestudio.com/#organization" }
+    }
+  ]
 }
 </script>
 </head>
 <body>
-
 <header class="site-header">
   <div class="container">
     <nav class="nav">
@@ -62,76 +92,124 @@
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="method.html">Our method</a>
+        <a href="insights.html">Insights</a>
         <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html#snapshot" class="btn btn-primary nav-cta">Free snapshot</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="page-header">
+  <section class="hero page-hero">
+    <div class="hero-deco" aria-hidden="true"><svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
+<defs>
+  <linearGradient id="hdFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000"/><stop offset="0.55" stop-color="#fff"/>
+  </linearGradient>
+  <mask id="hdMask"><rect width="900" height="620" fill="url(#hdFade)"/></mask>
+</defs>
+<g mask="url(#hdMask)">
+  <g stroke="#B89B5E" stroke-width="1" opacity="0.07">
+    <path d="M90 0V620M180 0V620M270 0V620M360 0V620M450 0V620M540 0V620M630 0V620M720 0V620M810 0V620" fill="none"/>
+    <path d="M0 90H900M0 180H900M0 270H900M0 360H900M0 450H900M0 540H900" fill="none"/>
+  </g>
+  <g stroke="#B89B5E" stroke-width="0.9" opacity="0.34" fill="none">
+    <path d="M180 470 L320 330 L470 400 L610 210 L760 290 L860 130"/>
+    <path d="M320 330 L430 160 L610 210 M470 400 L590 500 L760 290 M430 160 L250 190"/>
+  </g>
+  <g fill="#cbb074">
+    <circle cx="320" cy="330" r="3"/><circle cx="320" cy="330" r="9" opacity="0.14"/>
+    <circle cx="610" cy="210" r="3"/><circle cx="610" cy="210" r="9" opacity="0.14"/>
+    <circle cx="470" cy="400" r="3"/><circle cx="470" cy="400" r="9" opacity="0.14"/>
+    <circle cx="760" cy="290" r="3"/><circle cx="760" cy="290" r="9" opacity="0.14"/>
+    <circle cx="430" cy="160" r="2.4"/><circle cx="590" cy="500" r="2.4"/>
+    <circle cx="860" cy="130" r="2.4"/><circle cx="250" cy="190" r="2.4"/><circle cx="180" cy="470" r="2.4"/>
+    <path d="M700 90 l0 -14 M700 90 l0 14 M700 90 l-14 0 M700 90 l14 0" stroke="#cbb074" stroke-width="1" opacity="0.5"/>
+    <path d="M340 540 l0 -10 M340 540 l0 10 M340 540 l-10 0 M340 540 l10 0" stroke="#cbb074" stroke-width="1" opacity="0.4"/>
+  </g>
+</g>
+</svg></div>
     <div class="container">
-      <span class="eyebrow center">Who we are</span>
-      <h1>Built for legal firms</h1>
-      <p>We exist because national agencies can't serve smaller firms profitably, and those firms can't justify the internal team they need.</p>
+      <div class="hero-inner">
+        <span class="eyebrow">Who we are</span>
+        <h1 class="display">Built for<br><span class="accent-i">legal firms.</span></h1>
+        <p class="lede">Headnote Studio is a marketing studio working exclusively with small and mid-size UK law firms. We exist because national agencies can't serve smaller firms profitably - and those firms can't justify the internal team they need.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section bg-parchment">
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Conveyancing</span><span>Wills &amp; probate</span><span>Family law</span><span>Employment law</span><span>Dispute resolution</span><span>Regional UK law firms</span>
+    </div>
+  </div>
+
+  <!-- ════ STORY ════ -->
+  <section class="section">
     <div class="container">
-      <div class="prose">
-
-        <div class="story-block">
-          <div class="story-head">
-            <span class="story-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
-            <h2>The problem we solve</h2>
-          </div>
-          <p>A legal firm needs four things to be found, chosen and trusted online: visibility, content, monitoring, and a referrer network.</p>
-          <p>Doing all four properly used to require a team of four: a writer, an SEO specialist, a business-development lead, and a marketing manager.</p>
-          <p>Most small and mid-size firms can't justify that headcount. National agencies won't take them on — the economics simply don't work at a reasonable monthly retainer.</p>
+      <div class="split" style="align-items:start;">
+        <div class="split-body reveal">
+          <span class="eyebrow">The problem we solve</span>
+          <h2 class="statement">Four specialists' work, landing on people who already have full-time jobs.</h2>
         </div>
+        <div class="split-body reveal reveal-d1">
+          <p>A legal firm needs four things to be found, chosen and trusted online: visibility, reviews, content and honest measurement.</p>
+          <p>Doing all four properly used to require a team of four - a writer, an SEO specialist, a business-development lead and a marketing manager. Most small and mid-size firms can't justify that headcount, and national agencies won't take them on: the economics simply don't work at a reasonable monthly retainer.</p>
+        </div>
+      </div>
 
-        <div class="story-block">
-          <div class="story-head">
-            <span class="story-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>
-            <h2>How we solve it</h2>
-          </div>
-          <p>AI handles the heavy lifting of production. We provide the judgement, strategic direction, and rigorous quality control.</p>
-          <p>That means we can run all four pillars — visibility, content, monitoring, referrer network — for a legal firm at a price point they can easily absorb into their operational costs.</p>
+      <div class="split" style="align-items:start;margin-top:96px;">
+        <div class="split-body reveal">
+          <span class="eyebrow">How we solve it</span>
+          <h2 class="statement">AI does the production. People do the judgement.</h2>
+        </div>
+        <div class="split-body reveal reveal-d1">
+          <p>AI does our production work - the monitoring, searching and drafting that used to need a team of four. Experienced people do the judgement, strategic direction and quality control, and nothing client-facing ships without human review.</p>
+          <p>That means we can run all four pillars for a legal firm at a price the practice can absorb into its operational costs.</p>
           <p class="emphasis">We're sized and priced for firms a national agency cannot serve.</p>
         </div>
+      </div>
 
-        <div class="story-block">
-          <div class="story-head">
-            <span class="story-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></span>
-            <h2>Who we work with</h2>
-          </div>
-          <p>We work with small and mid-size legal firms serving individuals and businesses in their local area.</p>
-          <p>Practice areas often include conveyancing, wills and probate, family law, employment law, and dispute resolution.</p>
+      <div class="split" style="align-items:start;margin-top:96px;">
+        <div class="split-body reveal">
+          <span class="eyebrow">Who we work with</span>
+          <h2 class="statement">Regional UK law firms, exclusively.</h2>
         </div>
-
-        <div class="story-block">
-          <span class="eyebrow">Our promises</span>
-          <div class="story-head" style="margin-top:12px;">
-            <span class="story-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <h2>What we will never do</h2>
-          </div>
-          <ul style="margin:0;padding-left:22px;max-width:700px;color:var(--ink-text);font-size:18px;line-height:1.7;">
-            <li style="margin-top:10px;">Never write content that pretends to be legal advice — we write information; you give advice.</li>
-            <li style="margin-top:10px;">Never make claims about your firm we can't back from your own records.</li>
-            <li style="margin-top:10px;">Never guarantee rankings or outcomes — nobody controls these engines.</li>
-            <li style="margin-top:10px;">Never publish a word without your nominated partner's written sign-off.</li>
-            <li style="margin-top:10px;">Never lock you in — after the first engagement, everything is monthly with 30 days' notice.</li>
-          </ul>
+        <div class="split-body reveal reveal-d1">
+          <p>We work with small and mid-size UK law firms serving individuals and businesses in their local area - typically in conveyancing, wills and probate, family law, employment law and dispute resolution.</p>
+          <p>Headnote Studio was founded by James Hatton and is based in Solihull. We test the surfaces that matter weekly, and everything we measure about your firm, we measure about ourselves.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div style="padding-top:32px;border-top:1px solid var(--border-soft);">
-          <a href="services.html" class="btn btn-primary btn-lg">Explore our services
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
+  <!-- ════ THE FIVE NEVERS ════ -->
+  <section class="section band-green">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our promises</span>
+        <h2 class="display-md">What we will<br><span class="accent-i">never do.</span></h2>
+      </div>
+      <ul class="nevers reveal">
+        <li><span>Never write content that pretends to be legal advice - <strong>we write information; you give advice.</strong></span></li>
+        <li><span>Never make claims about your firm <strong>we can't back from your own records.</strong></span></li>
+        <li><span>Never guarantee rankings or outcomes - <strong>nobody controls these engines.</strong></span></li>
+        <li><span>Never publish a word without your nominated partner's <strong>written sign-off.</strong></span></li>
+        <li><span>Never lock you in - after the first engagement, <strong>everything is monthly with 30 days' notice.</strong></span></li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- ════ CLOSING CTA ════ -->
+  <section class="section cta-band">
+    <div class="container">
+      <span class="eyebrow center">Sized and priced for firms the big agencies can't serve</span>
+      <h2 class="display-md">See what that looks like<br><span class="accent-i">in practice.</span></h2>
+      <div class="cta-actions" style="margin-top:36px;">
+        <a href="services.html" class="btn btn-primary btn-lg">Explore our services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="contact.html#snapshot" class="btn btn-outline btn-lg">Request your free snapshot</a>
       </div>
     </div>
   </section>
@@ -145,18 +223,21 @@
           <img src="images/headnote-symbol-light.svg" alt="Headnote Studio">
           <span><span class="logo-word">Headnote</span><span class="logo-sub">Studio</span></span>
         </div>
-        <p class="footer-about">AI-augmented digital marketing for small and mid-size legal firms.</p>
+        <p class="footer-about">Headnote Studio is a marketing studio for small and mid-size UK law firms - getting firms found, chosen and trusted in the era of AI search.</p>
         <p class="footer-disclaimer">AI is used in our production process; all content is reviewed by people before publication.</p>
       </div>
       <div class="footer-contact">
         <span class="footer-col-label">Contact</span>
-        <a href="mailto:info@headnotestudio.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>info@headnotestudio.com</a>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Solihull, United Kingdom</span>
+        <a href="mailto:info@headnotestudio.com">info@headnotestudio.com</a>
+        <a href="tel:+447350130001">07350 130001</a>
+        <span>Solihull, United Kingdom</span>
       </div>
       <div class="footer-col">
         <span class="footer-col-label">Quick links</span>
         <a href="services.html">Services</a>
         <a href="method.html">Our method</a>
+        <a href="insights.html">Insights</a>
+        <a href="playbook.html">The AI answer playbook</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -170,6 +251,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=1"></script>
+<script src="js/main.js?v=15"></script>
 </body>
 </html>

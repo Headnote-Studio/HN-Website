@@ -36,6 +36,8 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 ├── method.html         ← Our method (evidence tagging, one honest number, fee guarantees)
 ├── about.html          ← About (+ "What we will never do" promises)
 ├── contact.html        ← Contact (details + #snapshot section — mailto, no form)
+├── insights.html       ← Insights hub (playbook + coming-soon slots)
+├── playbook.html       ← The AI answer playbook (Article + FAQ schema, James Hatton byline)
 ├── privacy.html        ← Privacy Policy
 ├── terms.html          ← Terms of Service
 ├── 404.html            ← Custom error page
@@ -76,9 +78,11 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 
 ## Content Conventions (keep consistent)
 
-- **Four-pillar order:** wherever the pillars appear (home "Four pillars, one service" cards, the Services page blocks, and prose mentions), the order is **Visibility → Content → Monitoring → Referrer network** — Visibility first, Referrer network last. Move each pillar's icon, heading and text together as a block.
+- **Four-pillar order (changed 2026-07-10, James's decision):** the pillars are **Visibility → Reviews → Content → Measurement**. The **Referrer network is NOT a pillar** — it is positioned as diagnostic-led only ("And when the map says so" band on Services), consistent with board decision D22 (never marketed cold) and Foundation's ratified scope. Move each pillar's icon, heading and text together as a block.
 - **Referrer network framing:** lead with the local *network of influence* — the professional introducers who refer (accountants, mortgage brokers, estate agents, financial advisers) **and** the community voices, groups and channels where ideal clients pay attention — not just "finding referrers". No paid-"influencer" promises.
 - **Footer tagline** ("The first note your next client sees.") is set in **Muted Brass** (`--muted-brass`, `#B89B5E`).
+- **Style rules (2026-07-10):** no em dashes anywhere — use "-" if a dash is needed; no Oxford commas; snapshot offer copy says "the main AI assistants" (generic), while measurement/method copy uses the ratified engine list (ChatGPT, Google's AI (AI Overviews and AI Mode) and Google's local results, with Claude, Microsoft Copilot and Perplexity checked weekly).
+- **Design system ("The Verdict", stylesheet v3, 2026-07-10):** dark editorial type-led design; Fraunces display headings with italic brass accents; brass hairlines/numbered grids; ticker strips; scroll-reveal (respects prefers-reduced-motion); gold constellation hero decorations; inline SVG diagrams. Cache-bust is at **?v=15**.
 - **Compliance guardrails (apply to all copy):** no prices anywhere on the site; guarantee language only ever refers to **refunds of our own fee** (never rankings or outcomes); the client's nominated partner keeps written sign-off; AI is used in production but people review before publication (keep the footer disclosure line intact). UK English throughout. No new colours/fonts beyond the brand palette.
 
 ## Safety Rules for Updates
