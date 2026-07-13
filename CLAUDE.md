@@ -62,7 +62,7 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 - **Apache `.htaccess`** handles: HTTPS redirect, www→non-www redirect, extensionless URL rewrites (e.g. `/services` → `/services.html`), security headers, caching, compression, hotlink protection, and custom 404.
 - **No database, no server-side processing, no environment variables, no contact form** — the Contact page lists email/phone/location with `mailto:`/`tel:` links.
 - **SEO:** every page has a unique title, meta description, canonical URL, Open Graph + Twitter Card tags, and Schema.org JSON-LD.
-- **Fonts:** Fraunces (headings) + Inter (body), loaded from Google Fonts.
+- **Fonts:** Playfair Display (headings) + Inter (body), loaded from Google Fonts.
 
 ## Brand Palette
 
@@ -82,7 +82,7 @@ This is a **static HTML/CSS/JS site** with no build step, no framework, and no s
 - **Referrer network framing:** lead with the local *network of influence* — the professional introducers who refer (accountants, mortgage brokers, estate agents, financial advisers) **and** the community voices, groups and channels where ideal clients pay attention — not just "finding referrers". No paid-"influencer" promises.
 - **Footer tagline** ("The first note your next client sees.") is set in **Muted Brass** (`--muted-brass`, `#B89B5E`).
 - **Style rules (2026-07-10):** no em dashes anywhere — use "-" if a dash is needed; no Oxford commas; snapshot offer copy says "the main AI assistants" (generic), while measurement/method copy uses the ratified engine list (ChatGPT, Google's AI (AI Overviews and AI Mode) and Google's local results, with Claude, Microsoft Copilot and Perplexity checked weekly).
-- **Design system ("The Verdict", stylesheet v3, 2026-07-10):** dark editorial type-led design; Fraunces display headings with italic brass accents; brass hairlines/numbered grids; ticker strips; scroll-reveal (respects prefers-reduced-motion); gold constellation hero decorations; inline SVG diagrams. Cache-bust is at **?v=15**.
+- **Design system ("The Verdict", stylesheet v3, 2026-07-10):** dark editorial type-led design; Playfair Display display headings with italic brass accents; brass hairlines/numbered grids; ticker strips; scroll-reveal (respects prefers-reduced-motion); gold constellation hero decorations; inline SVG diagrams. Cache-bust is at **?v=17**.
 - **Compliance guardrails (apply to all copy):** no prices anywhere on the site; guarantee language only ever refers to **refunds of our own fee** (never rankings or outcomes); the client's nominated partner keeps written sign-off; AI is used in production but people review before publication (keep the footer disclosure line intact). UK English throughout. No new colours/fonts beyond the brand palette.
 
 ## Safety Rules for Updates
