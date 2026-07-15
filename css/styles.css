@@ -217,6 +217,8 @@ h2.statement .plain { font-style: normal; }
 .trio-cell p { font-size: 15px; color: var(--cream-70); padding-bottom: 30px; }
 .band-cream .trio, .band-cream .trio-cell { border-color: var(--hairline-ink); }
 .band-cream .trio-cell p { color: var(--muted-text); }
+.trio-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .trio-2 { grid-template-columns: 1fr; } }
 
 /* ── Split (image + text) ── */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
